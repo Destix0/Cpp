@@ -2,9 +2,8 @@
 
 using namespace std;
 
-int main()
-{
-    int a,b,c;
+int main() {
+    int a, b, c;
     cout << "A = ";
     cin >> a;
     cout << "B = ";
@@ -15,4 +14,3 @@ int main()
 
     return 0;
 }
-
