@@ -4,23 +4,19 @@
 
 using namespace std;
 
-int main ()
-{
+int main() {
     int n;
     cout << "Enter natural number: ";
 
-    if (!(cin >> n) or n < 1)
-    {
+    if (!(cin >> n) or n < 1) {
         cout << "Invalid input" << endl;
         return 1;
     }
 
     int k = 0;
 
-    if (n >= 1)
-    {
-        for (int i = 1; i <= n; i++)
-        {
+    if (n >= 1) {
+        for (int i = 1; i <= n; i++) {
             if (i % 4 != 0)
                 continue;
 
@@ -28,7 +24,7 @@ int main ()
         }
     }
 
-    cout << "Answer: " << k << endl;
+    cout << "Amount of numbers: " << k << endl;
 
     return 0;
 }
