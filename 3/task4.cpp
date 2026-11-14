@@ -4,13 +4,11 @@
 
 using namespace std;
 
-int main ()
-{
+int main() {
     int n;
     cout << "n = ";
 
-    if (!(cin >> n) or n <= 0)
-    {
+    if (!(cin >> n) or n <= 0) {
         cout << "n is not natural" << endl;
         return 1;
     }
@@ -18,8 +16,7 @@ int main ()
     int divisor = 0;
     int n2 = 1;
 
-    while (n2 <= n)
-    {
+    while (n2 <= n) {
         if (n % n2 == 0)
             divisor++;
         n2++;
