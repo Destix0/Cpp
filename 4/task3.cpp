@@ -4,36 +4,32 @@
 
 using namespace std;
 
-int main ()
-{
+int main() {
     int n;
     cout << "Enter natural number > 1: ";
 
-    if (!(cin >> n) or n < 2)
-    {
+    if (!(cin >> n) or n < 2) {
         cout << "Invalid input" << endl;
         return 1;
     }
 
-    for (int i = n; i >= 2; i--)
-    {
+    for (int i = n; i >= 2; i--) {
         int divisor = 0;
         int i2 = i;
 
-        while (i2 <= i and i2 >= 2)
-        {
+        while (i2 <= i and i2 >= 2) {
             if (i % i2 == 0)
                 divisor++;
 
             i2--;
         }
 
-        if (divisor > 1)
-        {
+        if (divisor > 1) {
             continue;
         }
 
-        cout << "Maximum perm number = " << i << endl; break;
+        cout << "Maximum perm number = " << i << endl;
+        break;
     }
 
     return 0;
