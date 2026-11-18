@@ -4,21 +4,18 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     int n;
     cout << "n = ";
 
-    if (!(cin >> n) or n <= 0)
-    {
+    if (!(cin >> n) or n <= 0) {
         cout << "n is not natural" << endl;
         return 1;
     }
 
     int max_digit = 0;
 
-    while (n != 0)
-    {
+    while (n != 0) {
         int digit = n % 10;
 
         if (digit > max_digit)

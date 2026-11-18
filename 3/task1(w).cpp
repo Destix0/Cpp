@@ -6,26 +6,29 @@
 
 using namespace std;
 
-int main()
-{
-    double L = 10;
-    double p = 0.1;
-    int D = 100;
+int main() {
+    double distance, percentage;
+    int last_distance;
+
+    cout << "Enter distance on first day: ";
+    cin >> distance;
+
+    cout << "Enter %: ";
+    cin >> percentage;
+
+    cout << "Enter distance on last day: ";
+    cin >> last_distance;
+
+    double total_distance = 0;
     int day = 1;
-    double sumL = 0;
 
-    while (sumL <= D)
-    {
-        sumL += L;
-        L += L * p;
-
-        if (sumL > D)
-        {
-            cout << "Answer: " << day << endl; break;
-        }
-
-        day ++;
+    while (total_distance <= last_distance) {
+        day++;
+        distance += distance * percentage;
+        total_distance += distance;
     }
+
+    cout << "Answer: " << day << endl;
 
     return 0;
 }
